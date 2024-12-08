@@ -182,3 +182,13 @@ nav li {
   max-width: 150px;
   display: inline-block;
 }
+p.status{
+  margin: 0 auto;
+  text-align: center;
+  background-color: aquamarine;
+  color: #000;
+  max-width: 300px;
+  padding: 30px;
+  border-radius: 10px;
+  font-family: math;
+}

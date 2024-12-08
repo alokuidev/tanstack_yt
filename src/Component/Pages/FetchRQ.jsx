@@ -6,11 +6,12 @@ export const FetchRQ = () =>{
 
     
 
-    const {data} = useQuery({
+    const {data, isPending , isError , error} = useQuery({
         queryKey:['post'],
         queryFn:getData,
     })
-
+    if(isPending) return <p className="status">Loading...</p>
+    if(isError) return <p className="status"> Error: {error.message || 'Something Went Wrong !!!'}</p>
     return(
         <>
             <ul>
