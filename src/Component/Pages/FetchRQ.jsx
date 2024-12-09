@@ -9,6 +9,9 @@ export const FetchRQ = () =>{
     const {data, isPending , isError , error} = useQuery({
         queryKey:['post'],
         queryFn:getData,
+        // staleTime:500000,
+        refetchInterval:1000,
+        refetchIntervalInBackground:true,
     })
     if(isPending) return <p className="status">Loading...</p>
     if(isError) return <p className="status"> Error: {error.message || 'Something Went Wrong !!!'}</p>
