@@ -11,5 +11,10 @@ export const fetchData = () =>{
 
 export const getData = async() =>{
      const res = await api.get('/posts')
-     return res.status === 200 ? res.data : [];
+     return res.status === 200 && Array.isArray(res.data) ? res.data : [];
+}
+// to fetch respective id post
+export const getPost = async(id) =>{
+    const res = await api.get(`/posts/${id}`)
+    return res.status === 200 ? res.data : [];
 }
