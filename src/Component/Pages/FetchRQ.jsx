@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { getData } from "../API/Api";
-import { useQuery } from "@tanstack/react-query";
+import { keepPreviousData, useQuery } from "@tanstack/react-query";
 import { useState } from "react";
 
 export const FetchRQ = () => {
@@ -8,6 +8,7 @@ export const FetchRQ = () => {
   const { data, isLoading, isError, error } = useQuery({
     queryKey: ["post", pagenum],
     queryFn: () => getData(pagenum),
+    placeholderData:keepPreviousData,
     //staleTime:500000,
     // refetchInterval:1000,
     // refetchIntervalInBackground:true,
