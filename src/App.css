@@ -192,3 +192,13 @@ p.status{
   border-radius: 10px;
   font-family: math;
 }
+.buttonContainer{
+  text-align: center;
+}
+.buttonContainer button{
+  margin-left: 0px;
+}
+.buttonContainer p{
+  display: inline-block;
+  padding: 0px 20px;
+}
