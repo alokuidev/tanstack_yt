@@ -8,6 +8,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import FetchRQInd from "./Component/UI/FetchRQInd";
 import Flex from "./Component/UI/Flex";
+import { Grid } from "./Component/UI/Grid";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "flex",
         element: <Flex />,
+      },
+      {
+        path: "grid",
+        element: <Grid />,
       },
       {
         path: "/rq",
