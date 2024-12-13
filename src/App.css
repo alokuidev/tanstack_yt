@@ -202,3 +202,19 @@ p.status{
   display: inline-block;
   padding: 0px 20px;
 }
+.flex-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.child-container{
+  color: #fff;
+  background-color: #e74c3c;
+  width: 100px;
+  height: 80px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}

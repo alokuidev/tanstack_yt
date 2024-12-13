@@ -7,6 +7,7 @@ import './App.css';
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import FetchRQInd from "./Component/UI/FetchRQInd";
+import Flex from "./Component/UI/Flex";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "trad",
         element: <FetchOld />,
+      },
+      {
+        path: "flex",
+        element: <Flex />,
       },
       {
         path: "/rq",
