@@ -27,3 +27,15 @@ export const getPost = async (id) => {
 export const deletePost = async (id) =>{
   return api.delete(`/posts/${id}`);
 }
+
+//infinite scrolling loop
+
+export const fetchUsers = async({pageParams = 1}) =>{
+
+    try {
+      const res = await axios.get(`https://api.github.com/users?per_page=10&page=${pageParams}`)
+      return res.data;
+    } catch (error) {
+      console.log(error)
+    }
+}

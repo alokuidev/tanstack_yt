@@ -8,6 +8,7 @@ export const Header = () =>{
                     <NavLink to='/trad'>Old Data</NavLink>
                 </li>
                 <li><NavLink to='/rq'>New Data</NavLink></li>
+                <li><NavLink to='/infinite'>Infinite</NavLink></li>
             </ul>
         </nav>
     )
