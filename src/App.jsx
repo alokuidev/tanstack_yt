@@ -10,6 +10,7 @@ import FetchRQInd from "./Component/UI/FetchRQInd";
 import Flex from "./Component/UI/Flex";
 import { Grid } from "./Component/UI/Grid";
 import { InfiniteScroll } from "./Component/Pages/InfiniteScroll";
+import { InfiniteScrollNpm } from "./Component/Pages/InfiniteScrollNpm";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
       {
         path: "/infinite",
         element: <InfiniteScroll />,
+      },
+      {
+        path: "/npm",
+        element: <InfiniteScrollNpm />,
       },
 
     ],

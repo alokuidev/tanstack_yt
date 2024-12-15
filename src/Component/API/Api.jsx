@@ -30,10 +30,10 @@ export const deletePost = async (id) =>{
 
 //infinite scrolling loop
 
-export const fetchUsers = async({pageParams = 1}) =>{
-
+export const fetchUsers = async({pageParam = 1}) =>{
+    console.log(pageParam)
     try {
-      const res = await axios.get(`https://api.github.com/users?per_page=10&page=${pageParams}`)
+      const res = await axios.get(`https://api.github.com/users?per_page=10&page=${pageParam}`)
       return res.data;
     } catch (error) {
       console.log(error)

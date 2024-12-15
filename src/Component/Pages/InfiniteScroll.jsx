@@ -8,7 +8,7 @@ export const InfiniteScroll = () => {
     queryKey: ["users"],
     queryFn: fetchUsers,
     getNextPageParam: (lastPage, allPages) => {
-      // console.log("lastPage",lastPage,allPages)
+      // console.log("lallPages)
       return lastPage.length === 10 ? allPages.length + 1 : undefined;
     },
   });
